@@ -125,8 +125,6 @@
   .divider{height:1px;background:var(--border);margin:16px 0;}
   .email-preview{background:var(--surface);border:1px solid var(--border2);border-radius:6px;padding:16px;font-family:var(--mono);font-size:11px;color:var(--text2);line-height:1.8;max-height:240px;overflow-y:auto;}
   .ep-subject{font-size:12px;font-weight:600;color:var(--text);margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid var(--border);}
-  /* Mobile bookmarklet banner */
-  .mobile-sync-banner{display:none;background:var(--amber-dim);border:1px solid var(--amber);border-radius:6px;padding:12px 14px;margin-bottom:12px;font-size:11px;color:var(--amber);line-height:1.7;}
   /* Desktop-only: 4-col stat grid, 5-col summary */
   @media(min-width:640px){
     .container{padding:28px 28px 80px;}
@@ -134,15 +132,13 @@
     .stat-grid{grid-template-columns:repeat(4,1fr);}
     .summary-bar{grid-template-columns:repeat(5,1fr);}
     .ss-val{font-size:22px;}
-    .mobile-sync-banner{display:none!important;}
-  }
+    }
   /* Mobile-specific overrides */
   @media(max-width:639px){
     .logo-version{display:none;}
     .run-btn span:last-child{display:none;} /* hide "Run Daily Analysis" text, keep icon */
     .run-btn{padding:11px 14px;}
     .card-header{gap:6px;}
-    .mobile-sync-banner{display:block;}
     /* Hide desktop-only header chips on very small screens */
     .status-chip:not(.live){font-size:9px;padding:2px 5px;}
     textarea{font-size:13px!important;} /* prevent iOS zoom on focus */
