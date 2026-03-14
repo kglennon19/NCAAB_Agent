@@ -583,18 +583,8 @@ let _kenpomMemDate  = null;
 // ─── MAR 13 2026 BOOTSTRAP CACHE ─────────────────────────────────
 // Live-scraped from kenpom.com this session. Covers all 14 ESPN games today
 // + next-round bracket teams. Auto-loaded so agent runs without any sync.
-const MAR13_KENPOM = {"Arizona":{"wl":"30-2","adjEM":37.73,"adjT":70,"adjOE":126.6,"adjDE":88.8,"efg_off":54.9,"efg_def":44.4,"to_off":15.2,"to_def":16.8,"orb":38.3,"drb":26.3,"ftr_off":43.1,"ftr_def":28.4},"Iowa State":{"wl":"27-6","adjEM":32.25,"adjT":66.7,"adjOE":123.1,"adjDE":90.9,"efg_off":56.4,"efg_def":49.1,"to_off":15.0,"to_def":22.5,"orb":35.1,"drb":27.9,"ftr_off":34.7,"ftr_def":27.9},"Houston":{"wl":"27-5","adjEM":32.51,"adjT":63.5,"adjOE":124.4,"adjDE":91.9,"efg_off":52.2,"efg_def":47.0,"to_off":13.1,"to_def":21.5,"orb":36.1,"drb":30.8,"ftr_off":26.9,"ftr_def":39.0},"Kansas":{"wl":"23-9","adjEM":25.45,"adjT":67.9,"adjOE":119.3,"adjDE":93.9,"efg_off":52.2,"efg_def":45.1,"to_off":15.6,"to_def":14.0,"orb":29.4,"drb":30.1,"ftr_off":32.6,"ftr_def":27.5},"Illinois":{"wl":"24-7","adjEM":32.74,"adjT":65.5,"adjOE":131.6,"adjDE":98.9,"efg_off":55.0,"efg_def":47.5,"to_off":13.4,"to_def":11.7,"orb":39.1,"drb":26.9,"ftr_off":33.3,"ftr_def":19.8},"Wisconsin":{"wl":"23-9","adjEM":22.51,"adjT":68.9,"adjOE":125.7,"adjDE":103.2,"efg_off":54.7,"efg_def":51.2,"to_off":12.8,"to_def":14.5,"orb":29.8,"drb":28.2,"ftr_off":32.2,"ftr_def":31.1},"Nebraska":{"wl":"26-5","adjEM":27.00,"adjT":66.9,"adjOE":119.2,"adjDE":92.2,"efg_off":55.7,"efg_def":47.6,"to_off":14.3,"to_def":19.3,"orb":26.2,"drb":27.3,"ftr_off":27.5,"ftr_def":24.8},"Purdue":{"wl":"24-8","adjEM":29.57,"adjT":64.8,"adjOE":130.8,"adjDE":101.3,"efg_off":57.8,"efg_def":52.5,"to_off":13.7,"to_def":15.9,"orb":36.3,"drb":26.0,"ftr_off":28.3,"ftr_def":27.1},"Tennessee":{"wl":"22-10","adjEM":26.43,"adjT":65.2,"adjOE":121.2,"adjDE":94.8,"efg_off":51.9,"efg_def":47.7,"to_off":17.2,"to_def":16.5,"orb":44.8,"drb":27.7,"ftr_off":38.7,"ftr_def":35.9},"Vanderbilt":{"wl":"24-7","adjEM":26.45,"adjT":69.5,"adjOE":125.6,"adjDE":99.1,"efg_off":55.6,"efg_def":48.5,"to_off":13.6,"to_def":18.0,"orb":31.3,"drb":30.3,"ftr_off":38.4,"ftr_def":41.5},"St. John's":{"wl":"26-6","adjEM":24.66,"adjT":69.8,"adjOE":119.5,"adjDE":94.8,"efg_off":50.8,"efg_def":47.7,"to_off":14.7,"to_def":19.2,"orb":36.1,"drb":29.5,"ftr_off":41.7,"ftr_def":32.4},"Seton Hall":{"wl":"21-11","adjEM":15.80,"adjT":65.2,"adjOE":110.2,"adjDE":94.4,"efg_off":47.7,"efg_def":47.0,"to_off":16.6,"to_def":21.5,"orb":35.5,"drb":31.7,"ftr_off":35.9,"ftr_def":41.5},"Connecticut":{"wl":"22-10","adjEM":24.98,"adjT":66.3,"adjOE":119.4,"adjDE":94.4,"efg_off":52.8,"efg_def":46.4,"to_off":13.4,"to_def":18.9,"orb":31.5,"drb":28.7,"ftr_off":35.2,"ftr_def":28.9},"Georgetown":{"wl":"13-19","adjEM":-2.87,"adjT":69.1,"adjOE":106.9,"adjDE":109.8,"efg_off":49.3,"efg_def":53.9,"to_off":18.3,"to_def":16.8,"orb":28.9,"drb":29.6,"ftr_off":32.7,"ftr_def":34.8},"Virginia":{"wl":"28-4","adjEM":25.39,"adjT":65.9,"adjOE":121.5,"adjDE":96.1,"efg_off":54.5,"efg_def":45.4,"to_off":15.9,"to_def":15.8,"orb":37.9,"drb":28.7,"ftr_off":33.5,"ftr_def":33.3},"Miami":{"wl":"25-7","adjEM":21.83,"adjT":67.7,"adjOE":121.8,"adjDE":99.9,"efg_off":56.0,"efg_def":51.4,"to_off":16.3,"to_def":18.4,"orb":37.3,"drb":25.9,"ftr_off":37.8,"ftr_def":29.3},"Alabama":{"wl":"21-12","adjEM":22.58,"adjT":72.8,"adjOE":120.6,"adjDE":98.0,"efg_off":51.2,"efg_def":49.9,"to_off":17.4,"to_def":17.7,"orb":32.1,"drb":27.5,"ftr_off":38.4,"ftr_def":37.2},"Ole Miss":{"wl":"19-14","adjEM":16.24,"adjT":70.1,"adjOE":115.4,"adjDE":99.2,"efg_off":51.0,"efg_def":49.0,"to_off":15.8,"to_def":17.3,"orb":30.2,"drb":28.9,"ftr_off":36.1,"ftr_def":37.8},"Michigan State":{"wl":"22-10","adjEM":23.41,"adjT":67.4,"adjOE":118.6,"adjDE":95.2,"efg_off":52.8,"efg_def":46.3,"to_off":14.7,"to_def":17.1,"orb":31.9,"drb":29.8,"ftr_off":31.6,"ftr_def":30.7},"UCLA":{"wl":"17-15","adjEM":14.62,"adjT":65.8,"adjOE":114.8,"adjDE":100.2,"efg_off":50.1,"efg_def":48.7,"to_off":13.9,"to_def":14.5,"orb":30.1,"drb":28.3,"ftr_off":29.8,"ftr_def":31.4},"Duke":{"wl":"30-2","adjEM":39.32,"adjT":65.4,"adjOE":128,"adjDE":88.7,"efg_off":57.2,"efg_def":46.2,"to_off":15.7,"to_def":18.4,"orb":37.8,"drb":24.8,"ftr_off":37.8,"ftr_def":23},"Clemson":{"wl":"23-9","adjEM":19.44,"adjT":66.9,"adjOE":116.0,"adjDE":96.6,"efg_off":52.7,"efg_def":47.7,"to_off":14.5,"to_def":16.0,"orb":29.9,"drb":28.4,"ftr_off":30.6,"ftr_def":30.9},"Arkansas":{"wl":"18-14","adjEM":15.67,"adjT":70.7,"adjOE":115.1,"adjDE":99.5,"efg_off":50.3,"efg_def":48.8,"to_off":15.7,"to_def":17.2,"orb":33.0,"drb":29.1,"ftr_off":36.6,"ftr_def":35.3},"Oklahoma":{"wl":"16-16","adjEM":10.57,"adjT":68.1,"adjOE":110.4,"adjDE":99.8,"efg_off":48.9,"efg_def":48.4,"to_off":16.6,"to_def":14.7,"orb":29.2,"drb":29.7,"ftr_off":35.5,"ftr_def":38.1},"Kentucky":{"wl":"21-13","adjEM":23.85,"adjT":70.1,"adjOE":120.3,"adjDE":96.5,"efg_off":53.9,"efg_def":47.3,"to_off":14.3,"to_def":16.7,"orb":35.3,"drb":28.1,"ftr_off":34.8,"ftr_def":32.5},"Florida":{"wl":"26-6","adjEM":35.24,"adjT":70.9,"adjOE":125.6,"adjDE":90.3,"efg_off":53.7,"efg_def":45.8,"to_off":16.3,"to_def":15.5,"orb":42.7,"drb":24.7,"ftr_off":39.0,"ftr_def":33.8},"Michigan":{"wl":"30-2","adjEM":38.83,"adjT":71.4,"adjOE":127.7,"adjDE":88.9,"efg_off":58.5,"efg_def":44.2,"to_off":16.8,"to_def":15.8,"orb":35.6,"drb":28,"ftr_off":39.1,"ftr_def":26.5},"Ohio State":{"wl":"21-12","adjEM":21.85,"adjT":69.3,"adjOE":119.0,"adjDE":97.1,"efg_off":52.5,"efg_def":48.5,"to_off":15.2,"to_def":16.8,"orb":32.4,"drb":28.5,"ftr_off":33.1,"ftr_def":33.7},"VCU":{"wl":"24-7","adjEM":16.81,"adjT":69.0,"adjOE":120.1,"adjDE":103.3,"efg_off":54.3,"efg_def":48.9,"to_off":15.5,"to_def":17.1,"orb":33.1,"drb":30.0,"ftr_off":44.6,"ftr_def":34.4},"Duquesne":{"wl":"18-14","adjEM":3.25,"adjT":68.8,"adjOE":110.9,"adjDE":107.6,"efg_off":52.4,"efg_def":52.5,"to_off":17.5,"to_def":18.5,"orb":30.4,"drb":29.7,"ftr_off":38.9,"ftr_def":39.6}};
-const MAR13_ESPN = [{"id":"401851566","away":"Tennessee Volunteers","awayAbbr":"TENN","awayRank":25,"awayRecord":"22-10","home":"Vanderbilt Commodores","homeAbbr":"VAN","homeRank":22,"homeRecord":"24-7","neutral":false,"event":"SEC Tournament - Quarterfinal","time":"4:00 PM ET","state":"pre","spread":"TENN -1.5","total":"147.5","isTourney":true},{"id":"401851382","away":"Seton Hall Pirates","awayAbbr":"HALL","awayRank":null,"awayRecord":"21-11","home":"St. John's Red Storm","homeAbbr":"SJU","homeRank":12,"homeRecord":"26-6","neutral":false,"event":"Big East Tournament - Semifinal","time":"5:30 PM ET","state":"pre","spread":"SJU -8.5","total":"134.5","isTourney":true},{"id":"401851383","away":"Purdue Boilermakers","awayAbbr":"PUR","awayRank":17,"awayRecord":"24-8","home":"Nebraska Cornhuskers","homeAbbr":"NEB","homeRank":null,"homeRecord":"26-5","neutral":false,"event":"Big Ten Tournament - Quarterfinal","time":"6:30 PM ET","state":"pre","spread":"PUR -3.5","total":"145.5","isTourney":true},{"id":"401851568","away":"Iowa State Cyclones","awayAbbr":"ISU","awayRank":6,"awayRecord":"27-6","home":"Arizona Wildcats","homeAbbr":"ARIZ","homeRank":1,"homeRecord":"30-2","neutral":false,"event":"Big 12 Tournament - Semifinal","time":"7:00 PM ET","state":"pre","spread":"ARIZ -3.5","total":"144.5","isTourney":true},{"id":"401851432","away":"Miami Hurricanes","awayAbbr":"MIA","awayRank":null,"awayRecord":"25-7","home":"Virginia Cavaliers","homeAbbr":"UVA","homeRank":null,"homeRecord":"28-4","neutral":false,"event":"ACC Tournament - Semifinal","time":"7:00 PM ET","state":"pre","spread":"UVA -3.5","total":"143.5","isTourney":true},{"id":"401851569","away":"Ole Miss Rebels","awayAbbr":"MISS","awayRank":null,"awayRecord":"19-14","home":"Alabama Crimson Tide","homeAbbr":"ALA","homeRank":null,"homeRecord":"21-12","neutral":false,"event":"SEC Tournament - Quarterfinal","time":"7:00 PM ET","state":"pre","spread":"ALA -11.5","total":"163.5","isTourney":true},{"id":"401851385","away":"Georgetown Hoyas","awayAbbr":"GTWN","awayRank":null,"awayRecord":"13-19","home":"Connecticut Huskies","homeAbbr":"CONN","homeRank":16,"homeRecord":"22-10","neutral":false,"event":"Big East Tournament - Semifinal","time":"8:00 PM ET","state":"pre","spread":"CONN -15.5","total":"137.5","isTourney":true},{"id":"401851386","away":"UCLA Bruins","awayAbbr":"UCLA","awayRank":null,"awayRecord":"17-15","home":"Michigan State Spartans","homeAbbr":"MSU","homeRank":null,"homeRecord":"22-10","neutral":false,"event":"Big Ten Tournament - Quarterfinal","time":"9:00 PM ET","state":"pre","spread":"MSU -5.5","total":"140.5","isTourney":true},{"id":"401851433","away":"Clemson Tigers","awayAbbr":"CLEM","awayRank":null,"awayRecord":"23-9","home":"Duke Blue Devils","homeAbbr":"DUKE","homeRank":2,"homeRecord":"30-2","neutral":false,"event":"ACC Tournament - Semifinal","time":"9:30 PM ET","state":"pre","spread":"DUKE -13.5","total":"149.5","isTourney":true},{"id":"401851570","away":"Arkansas Razorbacks","awayAbbr":"ARK","awayRank":null,"awayRecord":"18-14","home":"Oklahoma Sooners","homeAbbr":"OU","homeRank":null,"homeRecord":"16-16","neutral":false,"event":"SEC Tournament - Quarterfinal","time":"9:30 PM ET","state":"pre","spread":"ARK -4.5","total":"147.5","isTourney":true},{"id":"401851571","away":"Kansas Jayhawks","awayAbbr":"KU","awayRank":null,"awayRecord":"23-9","home":"Houston Cougars","homeAbbr":"HOU","homeRank":5,"homeRecord":"27-5","neutral":false,"event":"Big 12 Tournament - Semifinal","time":"9:30 PM ET","state":"pre","spread":"HOU -5.5","total":"138.0","isTourney":true}];
-const MAR13_DATE = 'Fri Mar 13 2026';
 // Auto-load bootstrap on Mar 13 so agent works immediately
-if (!_kenpomMemCache) {
-  const todayStr = new Date().toDateString();
-  if (todayStr === MAR13_DATE) {
-    _kenpomMemCache = MAR13_KENPOM;
-    _kenpomMemDate = todayStr;
-    console.log('[NCAAB] Bootstrap: 30-team KenPom cache loaded');
-  }
-}
+
 
 
 // KenPom console scraper — paste this in the browser console on kenpom.com
@@ -1216,7 +1206,7 @@ async function callModelAPI(cfg, today, slateGames) {
   if (!raw.trim()) throw new Error('Empty response from model');
 
   // Parse model analyses
-  const s = raw.replace(/```json[\s]*/gi, '').replace(/```[\s]*/g, '').trim();
+  const s = raw.replace(/```json\s*/gi, '').replace(/```\s*/g, '').trim();
   const j1 = s.indexOf('{'), j2 = s.lastIndexOf('}');
   let modelOut = {};
   try { modelOut = JSON.parse(s.slice(j1, j2 + 1)); }
@@ -1699,7 +1689,7 @@ async function runPostmortem() {
     const d = await resp.json();
     addLog('Post-mortem API: in=' + d.usage?.input_tokens + ' out=' + d.usage?.output_tokens + ' tokens', 'info');
     let raw = ''; for (const b of d.content||[]) if (b.type==='text') raw += b.text;
-    const s = raw.replace(/```json[\s]*/gi,'').replace(/```[\s]*/g,'').trim();
+    const s = raw.replace(/```json\s*/gi,'').replace(/```\s*/g,'').trim();
     const j1 = s.indexOf('{'), j2 = s.lastIndexOf('}');
     const out = JSON.parse(s.slice(j1, j2+1));
 
@@ -2027,24 +2017,7 @@ function copyMobileScript(which) {
   addLog('Agent v3 initialized. KenPom four-factor model ready.', 'ok');
   const cfg = await loadConfig();
   addLog('EV threshold: ' + cfg.evThreshold + 'pts | Max plays: ' + cfg.maxPlays, 'info');
-  // Auto-load Mar 13 bootstrap data
-  if (new Date().toDateString() === MAR13_DATE) {
-    if (_kenpomMemCache) {
-      document.getElementById('kenpomSyncStatus').textContent = '✓ Bootstrap: 30 teams';
-      document.getElementById('kenpomSyncStatus').style.color = 'var(--green)';
-      addLog('KenPom bootstrap loaded: 30 teams (Mar 13 live data)', 'ok');
-    }
-    if (!_espnRawGames.length && typeof MAR13_ESPN !== 'undefined') {
-      _espnRawGames = MAR13_ESPN;
-      document.getElementById('espnSlateStatus').textContent = '✓ Bootstrap: ' + _espnRawGames.length + ' games';
-      document.getElementById('espnSlateStatus').style.color = 'var(--green)';
-      addLog('ESPN bootstrap loaded: ' + _espnRawGames.length + ' games (Mar 13 live data)', 'ok');
-      applyESPNFilter();
-    }
-    addLog('Bootstrap active — Sync buttons refresh with latest data if needed', 'info');
-  } else {
-    addLog('Game Slate tab → Sync ESPN (F12 console) + Sync KenPom (F12 console)', 'warn');
-  }
+  addLog('Game Slate tab → Sync ESPN + Sync KenPom to load today\'s data', 'warn');
   initWeightEditor();
   updateSeasonRecord();
   checkKenpomCache();
