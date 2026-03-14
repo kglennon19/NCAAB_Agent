@@ -494,16 +494,17 @@ async function renderWeightChangelog() {
 
 // ─── LOG ─────────────────────────────────────────────────────────
 function addLog(msg,level='info') {
+  console.log(`[NCAAB ${level}] ${msg}`);
   const area=document.getElementById('logArea');
+  if (!area) return;
   const ts=new Date().toLocaleTimeString();
   const line=document.createElement('span');
   line.className='log-line '+(level||'info');
   line.textContent=`[${ts}] ${msg}`;
   area.appendChild(line); area.appendChild(document.createElement('br'));
   area.scrollTop=area.scrollHeight;
-  console.log(`[NCAAB ${level}] ${msg}`);
 }
-function clearLog(){ document.getElementById('logArea').innerHTML=''; }
+function clearLog(){ const a=document.getElementById('logArea'); if(a) a.innerHTML=''; }
 
 // ─── TAB SWITCHER ────────────────────────────────────────────────
 function switchTab(name) {
@@ -1893,7 +1894,7 @@ async function initWeightEditor(){
     const row=document.createElement('div'); row.className='weight-row';
     row.innerHTML=`<span class="weight-label">${w.label}</span><input type="range" class="weight-slider" id="w_${key}" min="0" max="50" value="${w.value}" oninput="updateWeightTotal()"><span class="weight-val" id="wv_${key}">${w.value}%</span>`;
     container.appendChild(row);
-    row.querySelector('input').addEventListener('input',e=>{document.getElementById('wv_'+key).textContent=e.target.value+'%';});
+    const inp=row.querySelector('input'); if(inp) inp.addEventListener('input',e=>{const el=document.getElementById('wv_'+key); if(el) el.textContent=e.target.value+'%';});
   }
   updateWeightTotal();
 
